@@ -15,7 +15,7 @@ class CategoryInDb extends Component {
 
 	componentDidMount() {
 
-		fetch("http://localhost:3001/api/category/")
+		fetch("http://localhost:3000/api/category/")
 
 		.then(respuesta => {
 				
@@ -24,8 +24,7 @@ class CategoryInDb extends Component {
 		.then(category =>{
 
 		this.setState({categoryList: category.data})
-
-        console.log("🚀 ~ file: CategoryInDb.js ~ line 27 ~ CategoryInDb ~ componentDidMount ~ category.data}", category.data)
+        console.log("🚀 ~ file: CategoryInDb.js ~ line 27 ~ CategoryInDb ~ componentDidMount ~ category.data}", this.state.categoryList)
 
 		})
 

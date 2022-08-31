@@ -9,11 +9,12 @@ import { BrowserRouter } from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
-    <BrowserRouter>
+     <BrowserRouter>
     <div id="wrapper">
     <SideBar />
+    {/* <ContentWarapper /> */}
     </div>
-    </BrowserRouter>
+     </BrowserRouter>
     
 
 );

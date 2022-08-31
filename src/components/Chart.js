@@ -14,7 +14,7 @@ class Chart extends Component{
 
 componentDidMount(){
 
-    fetch("http://localhost:3001/api/products")
+    fetch("http://localhost:3000/api/products")
     .then( res => res.json())
     .then(products => {
 

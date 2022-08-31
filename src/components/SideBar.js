@@ -3,6 +3,7 @@ import logo from "../assets/images/logo-DH.png"
 import {Link, Route, Switch } from 'react-router-dom'
 import ContentWarapper from "./ContentWrapper"
 import LastMovie from "./LastMovie"
+import LastProduct from "./LastProduct"
 import CategoryInDb from "./CategoryInDb"
 import CardList from "./CardList"
 import Chart from "./Chart"
@@ -68,18 +69,18 @@ function SideBar () {
 			<hr className="sidebar-divider d-none d-md-block"/>
 		</ul>
 
-		<Switch>
+		   <Switch>
 
 			<Route exact={true} path="/"> <ContentWarapper /></Route>
 			<Route  path="/last-movie"> <LastMovie /></Route>
+			<Route  path="/last-product"> <LastProduct /></Route>
 			<Route  path="/category-list"> <CategoryInDb /> </Route>
 			<Route  path="/charts"> <CardList /> </Route>
 			<Route  path="/table"> <Chart /> </Route>
 			<Route  path="/search"> <SearchMovies /> </Route>
-			{/* <Route  path="category/:id"> <CategoryDetail /></Route> */}
 			<Route path="*"> <NotFound /> </Route>
 
-		</Switch>
+		</Switch> 
 
 	</>
 

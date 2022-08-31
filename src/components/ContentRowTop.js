@@ -4,7 +4,7 @@ import LastMovie from "./LastMovie"
 import CategoryInDb from "./CategoryInDb"
 import SearchMovies from "./SearchMovies"
 // import LastUser from "./LastUser"
-// import LastProduct from "./LastProduct"
+ import LastProduct from "./LastProduct"
 			
 function ContentRowTop (){
     
@@ -18,7 +18,7 @@ function ContentRowTop (){
 					<div className="row">
 					{/* <SearchMovies /> */}
 					<LastMovie />
-					{/* <LastProduct /> */}
+					<LastProduct />
 					<CategoryInDb />
 					</div>
 			</div>
