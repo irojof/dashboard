@@ -2,8 +2,8 @@ import React from "react"
 import logo from "../assets/images/logo-DH.png"
 import {Link, Route, Switch } from 'react-router-dom'
 import ContentWarapper from "./ContentWrapper"
-import LastMovie from "./LastMovie"
 import LastProduct from "./LastProduct"
+import LastUser from "./LastUser"
 import CategoryInDb from "./CategoryInDb"
 import CardList from "./CardList"
 import Chart from "./Chart"
@@ -72,8 +72,8 @@ function SideBar () {
 		   <Switch>
 
 			<Route exact={true} path="/"> <ContentWarapper /></Route>
-			<Route  path="/last-movie"> <LastMovie /></Route>
 			<Route  path="/last-product"> <LastProduct /></Route>
+			<Route  path="/last-user"> <LastUser /></Route>
 			<Route  path="/category-list"> <CategoryInDb /> </Route>
 			<Route  path="/charts"> <CardList /> </Route>
 			<Route  path="/table"> <Chart /> </Route>

@@ -1,29 +1,30 @@
 import React from "react";
 import { Component } from "react";
 import CardProduct from "./CardProduct";
-class LastProduct extends Component{
+import CardUser from "./CardUser";
+class LastUser extends Component{
 
         constructor(){
             super()
             this.state = {
     
-                productsList: []
+                usersList: []
     
             }
         }
     
     componentDidMount(){
     
-        fetch("http://localhost:3000/api/products/last-product")
+        fetch("http://localhost:3000/api/users/last-user")
 
         .then(respuesta => {
 
             return respuesta.json()})
             
-            .then(products =>{
+            .then(users =>{
     
-            this.setState({productsList: products.data})
-            console.log(this.state.productsList)
+            this.setState({usersList: users.data})
+            console.log(this.state.usersList)
     
             })
     
@@ -36,12 +37,12 @@ render(){
         <div className="col-lg-6 mb-4">
         <div className="card shadow mb-4">
             <div className="card-header py-3">
-                <h5 className="m-0 font-weight-bold text-gray-800">Último producto creado
+                <h5 className="m-0 font-weight-bold text-gray-800">Último usuario creado
                 </h5>
             </div>
-{this.state.productsList.map((products, i) => {
+{this.state.usersList.map((users, i) => {
 
-return    <CardProduct {...products} key={i} />
+return    <CardUser {...users} key={i} />
 })
 }
         </div>
@@ -51,4 +52,4 @@ return    <CardProduct {...products} key={i} />
 }
 }
 
-export default LastProduct
+export default LastUser

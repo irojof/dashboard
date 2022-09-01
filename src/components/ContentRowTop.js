@@ -1,10 +1,10 @@
 import React from "react"
 import CardList from "./CardList"
-import LastMovie from "./LastMovie"
 import CategoryInDb from "./CategoryInDb"
 import SearchMovies from "./SearchMovies"
 // import LastUser from "./LastUser"
  import LastProduct from "./LastProduct"
+import LastUser from "./LastUser"
 			
 function ContentRowTop (){
     
@@ -17,7 +17,6 @@ function ContentRowTop (){
 			        <CardList />
 					<div className="row">
 					{/* <SearchMovies /> */}
-					<LastMovie />
 					<LastProduct />
 					<CategoryInDb />
 					</div>

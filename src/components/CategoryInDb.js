@@ -43,7 +43,7 @@ class CategoryInDb extends Component {
         <div className="col-lg-6 mb-4">						
 							<div className="card shadow mb-4">
 								<div className="card-header py-3">
-									<h5 onMouseOver = {()=> this.cambiarBackground()} className="m-0 font-weight-bold text-gray-800">Category in Data Base</h5>
+									<h5 onMouseOver = {()=> this.cambiarBackground()} className="m-0 font-weight-bold text-gray-800">Categorías por producto</h5>
 								</div>
 								<div className="card-body category-background">
 									<div className="row">
